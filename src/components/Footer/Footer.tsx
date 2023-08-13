@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="mt-32">
-      <div className="sm:px-8">
         <div className="mx-auto w-full max-w-7x1 lg:px-12 sm:px-8 border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row ">
             <nav>
@@ -39,7 +38,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </div>
     </footer>
   );
 };
