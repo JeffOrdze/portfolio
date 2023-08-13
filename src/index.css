@@ -4,10 +4,8 @@
 
 :root {
     --bgColor: #ffffff;
-    --textColor: #333333;
 }
 
 .dark {
     --bgColor: #333333;
-    --textColor: #ffffff;
 }
