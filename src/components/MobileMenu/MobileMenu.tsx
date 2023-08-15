@@ -15,7 +15,7 @@ const MobileMenu = () => {
       </Popover.Button>
       <Transition>
         <Transition.Child
-          enter="transition-opacity duration-75"
+          enter="transition-opacity duration-50"
           enterFrom="opacity-0"
           enterTo="opacity-100"
           leave="transition-opacity duration-150"
@@ -24,12 +24,12 @@ const MobileMenu = () => {
         >
           <Popover.Overlay
             className={
-              "fixed z-100 inset-0 bg-zinc-800/40 dark:bg-black dark:opacity-80 backdrop-blur-sm opacity-100"
+              "fixed z-50 inset-0 bg-zinc-800/40 dark:bg-black dark:opacity-80 backdrop-blur-sm opacity-100"
             }
           />
         </Transition.Child>
         <Transition.Child
-          enter="transition-opacity duration-500"
+          enter="transition-opacity duration-100"
           enterFrom="opacity-0"
           enterTo="opacity-100"
           leave="transition-opacity duration-150"
