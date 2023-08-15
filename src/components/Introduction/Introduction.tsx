@@ -16,7 +16,7 @@ const Introduction = () => {
 
   return (
     <section className="flex-auto md:w-3/4 md:mx-auto">
-      <Heading />
+      <Heading text="Software engineer, skier, dog guy, coffee nut."/>
       <Socials/>
       <CodeBlock>
         <CodeIndentation>
