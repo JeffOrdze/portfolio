@@ -16,7 +16,7 @@ const Introduction = () => {
   const database = ["MongoDB", "MySQL"];
 
   return (
-    <section className="flex-auto md:w-3/4 md:mx-auto">
+    <section className="flex-auto">
       <MaxWContainer>
         <Heading text="Software engineer, skier, dog guy, coffee nut." />
         <Socials />

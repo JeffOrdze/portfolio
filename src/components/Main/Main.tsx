@@ -1,9 +1,13 @@
-interface Props {
-  children?: React.ReactNode;
-}
+import LayoutHelper from "../LayoutHelper/LayoutHelper";
 
-const Main: React.FC<Props> = ({ children }) => {
-  return <main className="flex lg:max-w-5xl lg:mx-auto w-full flex-col flex-auto mt-16 sm:mt-32 px-4 sm:px-8 lg:px-12">{children}</main>;
+export const Main = ({children}: {children:React.ReactNode}) => {
+  return (
+    <main className="flex-auto">
+     <LayoutHelper>
+      {children}
+     </LayoutHelper>
+    </main>
+  );
 };
 
 export default Main;
