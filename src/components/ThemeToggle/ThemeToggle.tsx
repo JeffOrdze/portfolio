@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ThemeContext } from "../../contexts";1
+import { ThemeContext } from "../../contexts";
 import { ThemeContextInterface } from "../../types";
 import { MoonIcon, SunIcon } from "@heroicons/react/20/solid";
 const ThemeToggle = () => {
