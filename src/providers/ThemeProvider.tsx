@@ -9,7 +9,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     };
 
     const currentTheme = localStorage.getItem("theme");
-
+    
     useEffect(() => {
         if (!currentTheme) {
             if (
@@ -25,7 +25,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
     useEffect(() => {
         localStorage.setItem("theme", darkTheme ? "dark" : "light");
-        document.documentElement.className = darkTheme ? "dark" : "light";
+        document.documentElement.className = darkTheme ? "dark h-full" : "light h-full";
     }, [darkTheme]);
 
     return (
