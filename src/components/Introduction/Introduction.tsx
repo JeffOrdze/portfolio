@@ -1,5 +1,6 @@
-import Heading from "../Heading/Heading";
+import { Heading } from "../Heading/Heading";
 import Socials from "../Socials/Socials";
+import MaxWContainer from "../MaxWContainer/MaxWContainer";
 import {
   CodeBlock,
   CodeIndentation,
@@ -16,8 +17,10 @@ const Introduction = () => {
 
   return (
     <section className="flex-auto md:w-3/4 md:mx-auto">
-      <Heading text="Software engineer, skier, dog guy, coffee nut."/>
-      <Socials/>
+      <MaxWContainer>
+        <Heading text="Software engineer, skier, dog guy, coffee nut." />
+        <Socials />
+      </MaxWContainer>
       <CodeBlock>
         <CodeIndentation>
           <Type category="nickname">
