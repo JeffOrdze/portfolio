@@ -30,6 +30,10 @@ function App() {
           path: "uses",
           element: <Uses />,
         },
+        {
+          path: "*",
+          element: <Error />,
+        },
       ],
     },
   ]);
