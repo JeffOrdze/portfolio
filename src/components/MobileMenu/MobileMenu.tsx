@@ -15,60 +15,53 @@ const MobileMenu = () => {
             Menu
             <ChevronDownIcon className="ui-open:rotate-180 ui-open:transform h-2 w-2" />
           </Popover.Button>
-          <Transition>
-            <Transition.Child
-              enter="transition-opacity duration-50"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="transition-opacity duration-150"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
+          <Transition
+            enter="transition-opacity duration-0"
+            enterFrom="opacity-0"
+            enterTo="opacity-100"
+            leave="transition-opacity duration-500"
+            leaveFrom="opacity-100"
+            leaveTo="opacity-0"
+          >
+            <Popover.Overlay
+              className={
+                "fixed z-40 inset-0 bg-zinc-800/40 dark:bg-black dark:opacity-80 opacity-100"
+              }
+            />
+            <Popover.Panel
+              className={
+                "fixed z-50 origin-top flex flex-col rounded-3xl align-center top-8 opacity-100 inset-x-4 p-8 ring-1 ring-zinc-900/5 dark:ring-zinc-800 bg-white dark:bg-zinc-900 "
+              }
             >
-              <Popover.Overlay
-                className={
-                  "fixed z-50 inset-0 bg-zinc-800/40 dark:bg-black dark:opacity-80 backdrop-blur-sm opacity-100"
-                }
-              />
-            </Transition.Child>
-            <Transition.Child
-              enter="transition-opacity duration-100"
-              enterFrom="opacity-0"
-              enterTo="opacity-100"
-              leave="transition-opacity duration-150"
-              leaveFrom="opacity-100"
-              leaveTo="opacity-0"
-            >
-              <Popover.Panel
-                className={
-                  "fixed z-50 origin-top flex flex-col rounded-3xl opacity-100 scale-100 align-center top-8 inset-x-4 p-8 ring-1 ring-zinc-900/5 dark:ring-zinc-800 bg-white dark:bg-zinc-900 "
-                }
-              >
-                <div>
-                  <h2 className="text-zinc-900 dark:text-zinc-500 text-sm font-medium">
-                    Navigation
-                  </h2>
-                </div>
-                <nav className="mt-6">
-                  <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:text-zinc-300">
-                    <li>
-                      <Link to="/about" className="block py-2" onClick={close}>
-                        About
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/case-studies" className="block py-2" onClick={close}>
-                        Case Studies
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/uses" className="block py-2" onClick={close}>
-                        Uses
-                      </Link>
-                    </li>
-                  </ul>
-                </nav>
-              </Popover.Panel>
-            </Transition.Child>
+              <div>
+                <h2 className="text-zinc-900 dark:text-zinc-500 text-sm font-medium">
+                  Navigation
+                </h2>
+              </div>
+              <nav className="mt-6">
+                <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:text-zinc-300">
+                  <li>
+                    <Link to="/about" className="block py-2" onClick={close}>
+                      About
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/case-studies"
+                      className="block py-2"
+                      onClick={close}
+                    >
+                      Case Studies
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/uses" className="block py-2" onClick={close}>
+                      Uses
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </Popover.Panel>
           </Transition>
         </>
       )}
