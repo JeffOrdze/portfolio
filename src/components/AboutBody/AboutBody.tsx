@@ -47,6 +47,7 @@ export const AboutSocials = () => {
             href="https://github.com/JeffOrdze"
             aria-label="Follow on Github"
             className="flex items-center text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            target="_blank"          
           >
             <svg
               viewBox="0 0 24 24"
@@ -63,6 +64,7 @@ export const AboutSocials = () => {
             href="https://www.linkedin.com/in/jeff-ordze/"
             aria-label="Follow on LinkedIn"
             className="flex items-center text-sm font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-500"
+            target="_blank"          
           >
             <svg
               viewBox="0 0 24 24"
