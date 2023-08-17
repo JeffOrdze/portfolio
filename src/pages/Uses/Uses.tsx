@@ -13,10 +13,25 @@ const Uses = () => {
     <Main>
       <Helmet>
         <title>jmordze - uses</title>
-        <meta name="description" content="Software I use, tech I love, and other things in my setup that make me feel cool." />
+        <meta
+          name="description"
+          content="Software I use, tech I love, and other things in my setup that make me feel cool."
+        />
       </Helmet>
       <UsesIntro />
       <UsesLayout>
+        <UsesSection>
+          <UsesColumn title="Development Tools">
+            <UsesListItem
+              title="VS Code - Dracula Theme"
+              text="Powerful, modern IDE that has all the extensions and theme's you could ever want."
+            />
+            <UsesListItem
+              title="Insomnia"
+              text="I've played around with a number of API query / development softwares and Insomnia's feature set and easy to use interface is hands down my favourite."
+            />
+          </UsesColumn>
+        </UsesSection>
         <UsesSection>
           <UsesColumn title="Workstation">
             <UsesListItem
@@ -42,18 +57,6 @@ const Uses = () => {
             <UsesListItem
               title="TOPSKY Dual Motor standing Desk"
               text="See slouching above...sometimes you just need to move around!"
-            />
-          </UsesColumn>
-        </UsesSection>
-        <UsesSection>
-          <UsesColumn title="Development Tools">
-            <UsesListItem
-              title="VS Code - Dracula Theme"
-              text="Powerful, modern IDE that has all the extensions and theme's you could ever want."
-            />
-            <UsesListItem
-              title="Insomnia"
-              text="I've played around with a number of API query / development softwares and Insomnia's feature set and easy to use interface is hands down my favourite."
             />
           </UsesColumn>
         </UsesSection>
