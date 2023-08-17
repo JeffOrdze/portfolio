@@ -17,22 +17,18 @@ function App() {
         {
           path: "/",
           element: <Home />,
-          errorElement: <Error />
         },
         {
           path: "about",
           element: <About />,
-          errorElement: <Error />
         },
         {
           path: "case-studies",
           element: <CaseStudies />,
-          errorElement: <Error />
         },
         {
           path: "uses",
           element: <Uses />,
-          errorElement: <Error />
         },
       ],
     },
