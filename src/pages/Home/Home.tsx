@@ -1,18 +1,26 @@
+import { Helmet } from "react-helmet-async";
 import LayoutHelper from "../../components/LayoutHelper/LayoutHelper";
 import Introduction from "../../components/Introduction/Introduction";
 import {
   HomePhotosContainer,
   HomePhoto,
 } from "../../components/HomePhotos/HomePhotos";
-import loki from "../../assets/images/loki.jpeg";
+import loki from "../../assets/images/Loki.jpg";
+import ski from "../../assets/images/ski.jpeg";
+import hut from "../../assets/images/hut.jpeg";
+import ridge from "../../assets/images/ridge.jpeg";
 
 const Home = () => {
-  const photos = [loki, loki, loki, loki, loki];
+  const photos = [loki, ski, ridge, hut, loki];
   return (
     <main>
-    <LayoutHelper>
-      <Introduction />
-    </LayoutHelper>
+      <Helmet>
+        <title>jmordze - home</title>
+        <meta name="description" content="portfolio home page" />
+      </Helmet>
+      <LayoutHelper>
+        <Introduction />
+      </LayoutHelper>
       <HomePhotosContainer>
         {photos.map((photo, index) => (
           <HomePhoto

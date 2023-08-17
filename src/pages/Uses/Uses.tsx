@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Main from "../../components/Main/Main";
 import {
   UsesIntro,
@@ -10,6 +11,10 @@ import {
 const Uses = () => {
   return (
     <Main>
+      <Helmet>
+        <title>jmordze - uses</title>
+        <meta name="description" content="the things I use" />
+      </Helmet>
       <UsesIntro />
       <UsesLayout>
         <UsesSection>

@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import Layout from "./pages/Layout/Layout";
 import Error from "./pages/Error/Error";
 import Home from "./pages/Home/Home";
@@ -11,7 +12,7 @@ function App() {
     {
       path: "/",
       element: <Layout />,
-      errorElement: <Error/>,
+      errorElement: <Error />,
       children: [
         {
           path: "/",
@@ -32,7 +33,11 @@ function App() {
       ],
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+    <HelmetProvider>
+      <RouterProvider router={router} />
+    </HelmetProvider>
+  );
 }
 
 export default App;

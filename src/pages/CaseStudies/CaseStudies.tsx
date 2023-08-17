@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { useContext } from "react";
 import { ThemeContext } from "../../contexts";
 import { ThemeContextInterface } from "../../types";
@@ -12,9 +13,13 @@ import resourceful from "../../assets/images/resourceful.svg";
 import resourcefulGreen from "../../assets/images/resourcefulGreen.svg";
 
 const CaseStudies = () => {
-  const { darkTheme } = useContext(ThemeContext) as ThemeContextInterface
+  const { darkTheme } = useContext(ThemeContext) as ThemeContextInterface;
   return (
     <Main>
+      <Helmet>
+        <title>jmordze - case studies</title>
+        <meta name="description" content="case studies" />
+      </Helmet>
       <CaseStudiesIntro />
       <CaseStudyContainer>
         <CaseStudy
@@ -26,7 +31,7 @@ const CaseStudies = () => {
           linkName="https://snowdream.ca/"
         ></CaseStudy>
         <CaseStudy
-         image={darkTheme ? resourcefulGreen : resourceful} 
+          image={darkTheme ? resourcefulGreen : resourceful}
           title="Resourceful"
           description="A resources directory for new developers that is divided into key concepts. Built with React (Vite), SASS, MongoDB, Node/Express &amp; a custom login flow. The back-end of this application is hosted via AWS on an EC2 instance"
           learned="Resourceful is a collaborative project shared between myself and 2 other developer friends. A good chunk of my time was spent in the back-end where we created an authorization middleware that I'm quite fond of. On the front end I was able to leverage this middleware in conjunction with react-router's new loader functionality to create awesome data persistance, as well as getting rid of the troublesome UI flashes that can happen when conditionally rendering elements."

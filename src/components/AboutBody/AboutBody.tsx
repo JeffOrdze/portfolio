@@ -13,9 +13,10 @@ export const AboutMe = () => {
     <div className="lg:order-first lg:row-span-2 ">
       <Heading text="I'm Jeff Ordze. I live in Calgary, AB, where I bring ideas to life." />
       <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-        <p></p>
-        <p></p>
-        <p></p>
+        <p>I grew up in a small town and, in a small consumer electronics business that I ran with my dad. Dad was always interested in cars but I was captivated with computers. What can we do with them? How could they make life better?</p>
+        <p>The mid 2010's is when I became truly enamored with home automation. I could take all of the technology in the house, put it in a single location, make everything beautiful, and control that from a computer? We had some in the shop so I started experimenting with it and that's when I caught the itch. </p>
+        <p>For the next several years, I delved deeper, taking on more and more projects. I was able to take this on mostly by myself, but there was always something about it that didn't quite satisfy the curiosity. I could do cool things, I felt like a wizard sometimes, but why did it work? How did this computer controller talk to the systems? How did it all work? That itch is what has brought me to software engineering and it's that curiosity that keeps me going. </p>
+        <p>Today, as I navigate the vast seas of software engineering, I often reflect on my humble beginnings in that small-town electronics shop. Each line of code I write is a testament to the boy who once marveled at the power of computers and the potential they held. While the tools and technology have evolved, my mission remains the same: harnessing technology to enhance lives, driven by an insatiable curiosity and a commitment to innovation.</p>
       </div>
     </div>
   );
