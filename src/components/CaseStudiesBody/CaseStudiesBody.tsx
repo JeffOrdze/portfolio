@@ -51,7 +51,7 @@ export const CaseStudy = ({
       </div>
       <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
         <div className="absolute -iset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-100 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 dark:bg-zinc-800/50 sm:-inset-x-6 sm:rounded-2xl"></div>
-        <a href={link}>
+        <a href={link} target="_blank">
           <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2x1"></span>
           <span className="relative z-10">{title}</span>
         </a>
