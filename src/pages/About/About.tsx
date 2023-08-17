@@ -12,7 +12,7 @@ const About = () => {
     <Main>
       <Helmet>
         <title>jmordze - about me</title>
-        <meta name="description" content="learn more about me" />
+        <meta name="description" content="I'm Jeff Ordze. I live in Calgary, AB, where I bring ideas to life." />
       </Helmet>
       <AboutGrid>
         <AboutPhoto />

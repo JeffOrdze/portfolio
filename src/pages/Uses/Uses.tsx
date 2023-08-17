@@ -13,7 +13,7 @@ const Uses = () => {
     <Main>
       <Helmet>
         <title>jmordze - uses</title>
-        <meta name="description" content="the things I use" />
+        <meta name="description" content="Software I use, tech I love, and other things in my setup that make me feel cool." />
       </Helmet>
       <UsesIntro />
       <UsesLayout>

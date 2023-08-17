@@ -18,7 +18,7 @@ const CaseStudies = () => {
     <Main>
       <Helmet>
         <title>jmordze - case studies</title>
-        <meta name="description" content="case studies" />
+        <meta name="description" content="Things I've made to learn and make the world a little easier to navigate." />
       </Helmet>
       <CaseStudiesIntro />
       <CaseStudyContainer>

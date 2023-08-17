@@ -16,7 +16,7 @@ const Home = () => {
     <main>
       <Helmet>
         <title>jmordze - home</title>
-        <meta name="description" content="portfolio home page" />
+        <meta name="description" content="Software engineer, skier, dog guy, coffee nut." />
       </Helmet>
       <LayoutHelper>
         <Introduction />
