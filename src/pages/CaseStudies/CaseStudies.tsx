@@ -32,7 +32,7 @@ const CaseStudies = () => {
         ></CaseStudy>
         <CaseStudy
           image={darkTheme ? resourcefulGreen : resourceful}
-          title="Resourceful"
+          title="Resourceful - Under Construction 🚧"
           description="A resources directory for new developers that is divided into key concepts. Built with React (Vite), SASS, MongoDB, Node/Express &amp; a custom login flow. The back-end of this application is hosted via AWS on an EC2 instance"
           learned="Resourceful is a collaborative project shared between myself and 2 other developer friends. A good chunk of my time was spent in the back-end where we created an authorization middleware that I'm quite fond of. On the front end I was able to leverage this middleware in conjunction with react-router's new loader functionality to create awesome data persistance, as well as getting rid of the troublesome UI flashes that can happen when conditionally rendering elements."
           link="https://resourceful.tips"
