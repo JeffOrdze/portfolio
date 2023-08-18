@@ -9,9 +9,10 @@ import loki from "../../assets/images/Loki.jpg";
 import ski from "../../assets/images/ski.jpeg";
 import hut from "../../assets/images/hut.jpeg";
 import ridge from "../../assets/images/ridge.jpeg";
+import desktop from "../../assets/images/desktop.jpg";
 
 const Home = () => {
-  const photos = [loki, ski, ridge, hut, loki];
+  const photos = [loki, ski, ridge, hut, desktop];
   return (
     <main>
       <Helmet>
