@@ -1,3 +1,4 @@
+import { useLoaderData } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
 import LayoutHelper from "../../components/LayoutHelper/LayoutHelper";
 import Introduction from "../../components/Introduction/Introduction";
@@ -5,19 +6,18 @@ import {
   HomePhotosContainer,
   HomePhoto,
 } from "../../components/HomePhotos/HomePhotos";
-import loki from "../../assets/images/Loki.jpg";
-import ski from "../../assets/images/ski.jpeg";
-import hut from "../../assets/images/hut.jpeg";
-import ridge from "../../assets/images/ridge.jpeg";
-import desktop from "../../assets/images/desktop.jpg";
+import { photoArray } from "../../types";
 
 const Home = () => {
-  const photos = [loki, ski, ridge, hut, desktop];
+  const photos = useLoaderData() as photoArray;
   return (
     <main>
       <Helmet>
         <title>jmordze - home</title>
-        <meta name="description" content="Software engineer, skier, dog guy, coffee nut." />
+        <meta
+          name="description"
+          content="Software engineer, skier, dog guy, coffee nut."
+        />
       </Helmet>
       <LayoutHelper>
         <Introduction />

@@ -6,8 +6,14 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import CaseStudies from "./pages/CaseStudies/CaseStudies";
 import Uses from "./pages/Uses/Uses";
+import loki from "./assets/images/Loki.jpg";
+import ski from "./assets/images/ski.jpeg";
+import hut from "./assets/images/hut.jpeg";
+import ridge from "./assets/images/ridge.jpeg";
+import desktop from "./assets/images/desktop.jpg";
 
 function App() {
+  const photos: Array<string> = [loki, ski, ridge, hut, desktop];
   const router = createBrowserRouter([
     {
       path: "/",
@@ -17,6 +23,9 @@ function App() {
         {
           path: "/",
           element: <Home />,
+          loader: async () => {
+            return photos;
+          },
         },
         {
           path: "about",
